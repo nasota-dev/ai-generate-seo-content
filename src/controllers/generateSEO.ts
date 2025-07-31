@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import generateSEOService from "../services/geminiService";
+import { generateSEOService } from "../services/geminiService";
 
 export async function generateSEO(req:Request, res:Response){
   const {topic, keywords, leng } = req.body
